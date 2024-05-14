@@ -1,0 +1,152 @@
+SMART MEAL PLANNER
+
+Created by: Thinh Nguyen, Kantemir Stalbekov, Mirzo Ulugbek Rustamov
+
+This app revolutionizes meal planning and tackles food waste by utilizing user-input ingredients to suggest recipes. It employs sophisticated data structures and algorithms to optimize meal suggestions based on ingredient availability, minimizing leftovers and reducing waste. Key components include a Meals Data system cataloging recipes and a Common Ingredient Graph suggesting subsequent meals to maximize ingredient use. Users benefit from intelligent meal recommendations that efficiently utilize kitchen resources, promoting sustainable living by minimizing food waste.
+
+*How to use:
+1. Set up:
+1.1. Make sure that all files from the zip are unzipped in the same folder
+1.2. (Optional) Re-compile the code. Run this command in the terminal: g++ -o MealPlanner meal.cpp recipeBook.cpp commonIngredientMap.cpp main.cpp
+1.3. Run the program. Trigger the MealPlanner executable file to start the app.
+
+2. Usage:
+2.1. Enter "menu.txt" for the menu file path
+2.2. Follow the prompt from the program to further use
+Notice: The program work best if you input the ingredients that present in menu.txt. We included the list of all ingredients present in the default menu.txt file (see at the end)
+
+*Adding more meal:
+1. New meal recipes should be added to the menu.txt file, or another .txt file. If you use another .txt file for your own custom menu, you will need to enter the path to that file at the start of the program
+2. Meal recipe should be formatted as:
+------------------
+Meal name
+- ingredient 1 (priority)
+- ingredient 2 (priority)
+- 
+------------------
+Notice:
++ priority must be an integer and placed inside parentheses locating at the end of that ingredient line.
++ The line of meal name MUST NOT contain hyphen, while the lines of ingredients MUST contain hyphens at the beginning.
++ Meal name and ingredient might contain space.
+
+
+*Example usage:
+================================================================================
+Welcome to the Smart Meal Planner!
+
+Please enter the path to the menu file: menu.txt
+
+Initializing...
+Initialization complete!
+
+Please enter the ingredients you want to use today (enter ! to finish):
+Ingredient 1: Garlic
+Ingredient 2: Ground beef
+Ingredient 3: Olive oil
+Ingredient 4: !
+Computing suggestions...
+
+
+--------------------------------------------------------------------------------
+Suggested meals for today ('Y' to choose, 'N' for another option):
+--------------------------------------------------------------------------------
+Option 1: Spaghetti Bolognese
+Required ingredients: Ground beef, Onion, Garlic, Spaghetti noodles, 
+Other ingredients: Tomato sauce, Olive oil, 
+--> Would you like to choose this meal? (Y/N): Y
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+Spaghetti Bolognese were chosen for today!
+This is the full list of ingredients: 
+1. Ground beef
+2. Onion
+3. Garlic
+4. Spaghetti noodles
+5. Tomato sauce
+6. Olive oil
+
+Food waste due to left-over ingredient is a major concern.
+Making dishes that share common ingredients can help using up the left-over ingredients from today's meal
+--------------------------------------------------------------------------------
+Do you want to see suggestions for next meal that have similar ingredients? (Y/N): Y
+--------------------------------------------------------------------------------
+Option 1: Chicken Alfredo Pasta
+Reusing 3 ingredients: 
+1. Ground beef
+2. Garlic
+3. Olive oil
+--> Would you like a different suggestion? (Y/N): N
+Thank you for using the Smart Meal Planner!
+================================================================================
+
+
+*DEFAULT INGREDIENT LIST:
+
+Ginger
+Pesto sauce
+Shrimp
+Pizza dough
+Cherry tomatoes
+Parsley
+Sour cream
+Onion
+Taco seasoning
+Croutons
+Chili powder
+Chicken broth
+Lemon
+Lettuce
+Sesame oil
+Butter
+Chicken breast
+Caesar dressing
+Salmon fillets
+Heavy cream
+Rice vinegar
+White wine
+Beef broth
+Spaghetti noodles
+Tomatoes
+Egg noodles
+Tortillas
+Ricotta cheese
+Tomato sauce
+Parmesan cheese
+Basil leaves
+Mushrooms
+Salsa
+Green onions
+Teriyaki sauce
+Pine nuts
+Coconut milk
+Salt
+Broccoli florets
+Kidney beans
+Honey
+Mixed vegetables
+Eggplant
+Soy sauce
+Pasta
+Chicken thighs
+Spinach
+Lasagna noodles
+Fettuccine pasta
+Bread crumbs
+Beef sirloin
+Zucchini
+Bell peppers
+Mozzarella cheese
+Romaine lettuce
+Garli
+Arborio rice
+Cheese
+Garlic
+Tomato
+Cumin
+Balsamic vinegar
+Ground beef
+Fresh mozzarella
+Linguine pasta
+Olive oil
+Curry paste
