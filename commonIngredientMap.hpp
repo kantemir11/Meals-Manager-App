@@ -21,7 +21,7 @@ struct Edge {
 class CommonIngredientMap {
     private:
         vector<string> nodes;
-        vector<vector<pair<int, int>>> adj;
+        vector<vector<pair<int, int> > > adj;
         RecipeBook& recipes;
 
     public:
