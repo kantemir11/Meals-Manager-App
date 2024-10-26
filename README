@@ -4,6 +4,8 @@ Created by: Thinh Nguyen, Kantemir Stalbekov, Mirzo Ulugbek Rustamov
 
 This app revolutionizes meal planning and tackles food waste by utilizing user-input ingredients to suggest recipes. It employs sophisticated data structures and algorithms to optimize meal suggestions based on ingredient availability, minimizing leftovers and reducing waste. Key components include a Meals Data system cataloging recipes and a Common Ingredient Graph suggesting subsequent meals to maximize ingredient use. Users benefit from intelligent meal recommendations that efficiently utilize kitchen resources, promoting sustainable living by minimizing food waste.
 
+DEMO: https://drive.google.com/file/d/1aPKk6f_mSyc2EH6f3_b5POU-FRHFvsyC/view?usp=sharing
+
 *How to use:
 1. Set up:
 1.1. Make sure that all files from the zip are unzipped in the same folder
